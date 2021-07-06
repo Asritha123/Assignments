@@ -1,0 +1,26 @@
+<p>first works!</p>
+<h2>First Component</h2><hr>
+<div class ="container">
+<table  border="2px" class=table align="center">
+<tr>
+
+  <td> CustomerId </td>
+
+  <td>CustomerName</td>
+
+  <td>CustomerEmailid</td>
+
+</tr>
+<tr appMycolor *ngFor='let customer of Customers'>
+
+  <td>{{customer.customerId}} </td>
+
+  <td>{{customer.customerName}} </td>
+
+  <td>{{customer.customerEmailid}}</td>
+
+  </tr>
+
+</table>
+</div>
+<button (click)='modifiedData()'>Click Here</button>
